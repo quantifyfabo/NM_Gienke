@@ -21,8 +21,8 @@ library(readxl)
 library(dplyr)
 library(lubridate)
 
-emdat_raw <- read_excel('/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/Datasets/EM-Dat2023_2025_Raw.xlsx')
-ts_data_clean <- read.csv('/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/Datasets/TS_EN_v1.csv')
+emdat_raw <- read_excel('/EM-Dat2023_2025_Raw.xlsx')
+ts_data_clean <- read.csv('/TS_EN_v1.csv')
 
 # date format in ts data
 ts_data_clean$date <- as.Date(ts_data_clean$date)
