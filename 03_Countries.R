@@ -109,7 +109,7 @@ write_xlsx(TS_Disaster, "TS_ManualLabel.xlsx")
 # MANUAL LABELLING OF COUNTRIES OF UNCLASSIFIDED TEXTS
 # Load labeled data
 
-TS_Disaster_Country <- read_excel('/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/R_Project_Termpaper/TS_ManualLabel.xlsx')
+TS_Disaster_Country <- read_excel('/TS_ManualLabel.xlsx')
 
 # remove cases that are maunualy declared as not relevant
 TS_Disaster_Country <- TS_Disaster_Country %>%
@@ -205,7 +205,7 @@ analysis_country <- analysis_country %>%
 
 # GDP by World Bank 2023
 gdp_country <- read.csv(
-  '/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/Datasets/GDP_Worldbank.csv',
+  '/GDP_Worldbank.csv',
   skip = 4
 )
 gdp_country <- gdp_country %>%
@@ -218,7 +218,7 @@ gdp_country <- gdp_country %>%
   )
 
 # Population by World Bank 2023
-population_country <- read.csv('/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/Datasets/Population_Worldbank.csv',
+population_country <- read.csv('/Population_Worldbank.csv',
                                skip = 4)
 population_country <- population_country %>%
   select(
@@ -230,7 +230,7 @@ population_country <- population_country %>%
   )
 
 # Varieties of Democracy V-DEM Score (0-1)
-vdem <- read.csv('/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/Datasets/V-Dem-CY-Core-v15.csv')
+vdem <- read.csv('/V-Dem-CY-Core-v15.csv')
 
 vdem_country <- vdem %>%
   filter(year == 2023) %>%
