@@ -10,7 +10,7 @@ library(gt)
 library(corrplot)
 
 # load final dataset (Final_Dataset_CountryAnalysis.csv)
-analysis_country <- read.csv('/Users/fabiangi/Documents/Goethe Uni/Semester 3/VP Naturkatastrophen/Paper_Project/R_Project_Termpaper/NM_Termpaper_Gienke/analysis_country_final.csv')
+analysis_country <- read.csv('/analysis_country_final.csv')
 
 # -- Plot R1
 # show individual correlations
