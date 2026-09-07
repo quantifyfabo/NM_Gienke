@@ -646,7 +646,7 @@ end_time <- Sys.time()
 time_taken <- end_time - start_time
 time_taken
 
-write.csv(TS_ALL_Foreign_RAW_2025, file = "/Users/fabiangi/Documents/Goethe Uni/Semester 4/Master/TS_Webscrape/TS_ALL_Foreign_RAW_2025_Full2.csv", row.names = FALSE)
+write.csv(TS_ALL_Foreign_RAW_2025, file = "/TS_ALL_Foreign_RAW_2025_Full2.csv", row.names = FALSE)
 ```
 
 #finished
